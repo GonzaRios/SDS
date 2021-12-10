@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> SPEAKERS DATA SHEET </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> 
+    <link href="https://fontawesome.com/v5.15/icons/amazon?style=brands" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet" >
+    <script src="https://kit.fontawesome.com/2ed679b3a1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../CSS/Formato_TP0.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="../Img/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+  
+  </head>
+
+
+ <body>
+
+   <header class="encabezado" >
+    <nav class="menu" >
+       <a  class="pag"  href="index.html">  INICIO</a>
+       <a  class="pag" href="Productos.html">  PRODUCTOS</a>
+       <a  class="pag" href="Formulario.html" > CONTACTO</a>
+       <div class="nombreMarca">
+        <span  id="titulo"  style="color: white;" class="animate__fadeIn">SDS</span>
+        <p id="subtitulo" style="color: white;"> SPEAKERS DATA SHEET</p>
+       </div>
+    </nav>       
+  </header> 
+
+   <div  class="contenedor">
+    <div class="formulario"> 
+    <form name="form" action="mailto: riosgonzalo74@gmail.com" method="post" enctype="text/plain">
+ 
+     
+
+      <label class="nombre" >Nombre:  <input name="nombre"  type="text"  id="Nombre" maxlength="25" placeholder="Ingrese su Nombre"> </label> 
+       <div id="errorForm" > </div> 
+    
+
+      <label class="apellido"> Apellido: <input type="text" id="Apellido" maxlength="25" placeholder="Ingrese su Apellido"> </label>
+
+  
+
+    
+      <label class="direccion"> Dirección: <input type="text" id="Dirección" maxlength="25" placeholder="Ingrese su dirección"> </label>
+    
+
+    
+      <label class="provincia"> Provincia: <select id="provincia" placeholder="Ingrese su provincia"> 
+                  <option selected> Seleccione una provincia </option>
+                  <option> Buenos Aires</option>
+                  <option> CABA</option>
+                  <option> Catamarca</option>
+                  <option> Chaco</option>
+                  <option> Chubut</option>
+                  <option> Córdoba</option>
+                  <option> Corrientes</option>
+                  <option> Entre Ríos</option>
+                  <option> Formosa</option>
+                  <option> Jujuy</option>
+                  <option> La Pampa</option>
+                  <option> La Rioja</option>
+                  <option> Mendoza</option>
+                  <option> Misiones</option>
+                  <option> Neuquén</option>
+                  <option> Rio Negro</option>
+                  <option> Salta</option>
+                  <option> San Juan</option>
+                  <option> San Luis</option>
+                  <option> Santa Cruz</option>
+                  <option> Santa Fe</option>
+                  <option> Santiago del Estero</option>
+                  <option> Tierra del Fuego</option>
+                  <option> Tucumán</option>
+               </select> </label>
+
+
+      <label class="cp"> Código postal: <input type="text" id="cp" maxlength="8" placeholder="Ingrese su código postal"> </label>
+
+
+
+      <label class="email"> E-mail: <input type="text" id="mail" maxlength="25" placeholder="Ingrese su E-mail"> </label>
+
+
+
+
+      <label class="opcioncomprador"> Marque según corresponda:  </label>
+
+      <label class="empresa"> <input type="radio" name="comprador"  id="radio1" value="1" > Empresa </label>
+      <label class="particular">  <input type="radio" name="comprador"  id="radio2" value="2" > Particular</label>
+
+
+
+      <label class="tipoEnvio"> Envío: </label>
+
+      <label class="sucursal"> <input type="radio" name="envio"   id="radio3" value="1" > Retiro por sucursal </label>
+      <label class="domicilio">  <input type="radio" name="envio" id="radio4" value="2"> Envío a domicilio </label> 
+
+ 
+
+
+      <label class="comentario"> Ingrese un comentario:</label>
+      <label class="cuadroTexto"> <textarea name="comentario" > </textarea> </label>
+      <label class="boton"> <input type="submit" onclick="return enviarFormulario()" value="Enviar" >  </label>
+
+   </form>
+      </div>
+     </div>
+
+
+ 
+     <div id='error'></div>
+
+     <div class="contenedor">
+       <div class="mapas">
+          <label> <h4><p>SUCURSALES</p></h4> </label>
+          <iframe class="mapitas" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3260.845963056573!2d-59.10005268517411!3d-35.18539159601251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bd075150484cb5%3A0x45101605f1175053!2sPlaza%201810!5e0!3m2!1ses!2sar!4v1635546763646!5m2!1ses!2sar" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe> 
+           <iframe class="mapitas" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3260.8130877979092!2d-59.108137485174076!3d-35.18621089605662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bda9fe6c012e97%3A0x12f46aac9110e4cf!2sParque%20Municipal%20Ing.%20Hiriart!5e0!3m2!1ses!2sar!4v1635546534668!5m2!1ses!2sar" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+       </div> 
+
+     </div>
+
+    <footer id="footerProductos" class="piepag">
+
+      <strong> <p align="center"><i class="far fa-copyright"> Copyright 2021 SDS. Todos los derechos reservados. </i></p></strong>
+
+    </footer>
+
+    <script src="../JS/form-validation.js"></script>
+
+  </body>
+</html>

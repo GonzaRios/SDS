@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> SPEAKERS DATA SHEET </title>
+    <link href="https://fontawesome.com/v5.15/icons/amazon?style=brands" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet" >
+    <script src="https://kit.fontawesome.com/2ed679b3a1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../CSS/Formato_TP0.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="../Img/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+ </head>
+
+  <body>
+
+    <header class="encabezado" >
+      <nav class="menu" >
+         <a  class="pag"  href="index.html">  INICIO</a>
+         <a  class="pag" href="Productos.html">  PRODUCTOS</a>
+         <a  class="pag" href="Formulario.html" > CONTACTO</a>
+         <div class="nombreMarca">
+          <span  id="titulo"  style="color: white;" class="animate__fadeIn">SDS</span>
+          <p id="subtitulo"  style="color: white;"> SPEAKERS DATA SHEET</p>
+         </div>
+      </nav>       
+    </header>  
+    
+   <div class="contenedor">
+        <!-- <button id="botonFotos" class="boton2"> REFRESCAR IMAGEN</button> -->
+       <form class="cambioImagen">
+          <label class="seleccionParlante">  Elija un parlante: <select id="tipoParlante" placeholder="Seleccione parlante">
+           <option>ETON 5-612/C8/25RP-5" Woofer</option>
+           <option>Radian 2218Neo</option>
+        </select>
+        <label class="boton2"> <input type="submit" onclick="return enviarFormulario()" value="Recargar" >  </label>
+       </form>
+     
+       <div class="home">
+          <label> <img  id="img1" src="../Img/Parlante.png"  width=600 height=350 alt=""> </label>
+          <label> <img  id="img2" src="../Img/Grafico_Rta_Fc.png"  width=600 height=350 alt=""> </label>
+          <label> <img  id="img3" src="../Img/Especificaciones2.png"  width=600 height=350 alt=""> </label>
+          <label> <img  id="img4" src="../Img/Parlante2.png"  width=600 height=350 alt=""> </label>
+          <label> <img  id="img5" src="../Img/Grafico_Rta_Fc2.png"  width=600 height=350 alt=""> </label>
+          <label> <img  id="img6" src="../Img/Especificaciones3.png"  width=600 height=350 alt=""> </label>
+       </div>
+   </div>
+   
+    <footer id="footerProductos" class="piepag">
+
+        <p align="center"><i class="far fa-copyright"> Copyright 2021 SDS. Todos los derechos reservados. </i></p>
+  
+    </footer>
+
+  </body>
+
+</html>
