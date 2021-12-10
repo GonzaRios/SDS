@@ -1,0 +1,394 @@
+html{
+    height: 100%;
+    width: 100vw;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    
+}
+
+.encabezado{
+    background-color: rgb(2, 71, 92) ;
+      
+    height: 200px;
+    display: flex;
+}
+
+span{
+    animation-name: mover;
+    animation-duration: 3s;
+}
+
+.menu{
+    display: flex;
+    margin: 0 auto;
+    align-items: left;
+    height: 200px;
+    width: 100%;
+    
+}
+
+.menu a{
+    margin-top:75px;
+}
+
+.nombreMarca{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 200px;
+    width: 400px; */
+    /* margin-left: 50px; */
+    padding: 5%;
+    margin-left: 15%;
+}
+
+
+
+.pag {
+    /* margin: 15px;
+    
+    font-size: 20px;
+    border-bottom: medium;
+    border-style: ridge;
+    border-width: 2px;
+    border-radius: 5px; */
+    font-size: 1.5vw;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    margin: 0.3%;
+    border-radius: 5%;
+    border-right: white;
+    height: 30px;
+}
+
+.pag:hover {
+    background-color: rgb(143, 138, 139);;
+    color: white;
+    padding: 5px;
+    transition-property: all;
+    transition-duration: 0.8s;
+}
+
+#titulo {
+        display: block;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+        font-family:'Bebas Neue', cursive;
+        font-size: 6vw;
+        /* margin-left: 375px; */
+        /* padding: center; */
+        /* margin-top: 10px; */    
+}
+
+#subtitulo {
+    display: block;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    font-family:'Bebas Neue', cursive;
+    /* margin-left: 325px; */
+    font-size: 20px;
+    /* margin-bottom: 10px; */
+   
+}
+
+h2{
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+h4{
+    font-family: monospace;
+    padding-left: 20px;
+}
+
+a{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* Página inicial*/
+.home{
+    background-color: white;
+    margin: 0 auto;
+    width: 100%;
+    max-width:800px;
+    flex-direction: column;
+    font-size: 15px;
+}
+
+.home label{
+    margin: 50px;
+    display: block;
+}
+
+.aNosotros{
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 20px;
+    display:block;   
+}
+
+.textoaNosotros{
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 20px;
+    display:block;
+    font-size: large;   
+}
+
+
+.video{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    max-width: 500px;
+    margin: 0 auto;
+}
+/* Página formulario */ 
+.contenedor{
+    display: flex;
+    background-color: rgb(201, 209, 216);
+    
+}
+
+
+.formulario{
+
+    background-color: white;
+    margin: 0 auto;
+    width: 98vw;
+    max-width:800px;
+    flex-direction: column;
+    /* font-size: 50px; */
+    
+}
+
+.formulario form label{
+    margin: 12px;
+    display: block;
+    
+}
+
+
+.nombre, .apellido, .direccion, .provincia, .cp,
+.email, .opcioncomprador, .empresa, .particular, .tipoEnvio,
+.sucursal, .domicilio, .comentario, .cuadroTexto, .boton {  
+    font-size: medium;
+    font-style: black;
+    font-size: 1.2vw;
+}
+
+.formatError{
+    color: red;
+    font-size: 50px;
+    margin: 0 auto;
+    flex-direction: column;
+    }
+
+.formulario form label textarea{
+    width:80%;
+    max-width:350px;
+    height:60px;
+}
+
+/* Página de ubicación*/
+.mapas{
+    background-color: white;
+    margin: 0 auto;
+    width: 98%;
+    max-width:800px;
+    flex-direction: column;
+    font-size: 15px;
+}
+
+.mapas label{
+    margin: 12px;
+    padding: 20px;
+    display:inline;
+    
+}
+
+.mapas label h4 p{
+    font-size: 2vw;
+}
+
+.mapitas{
+    width: 80%;
+    padding: 10px;
+    display: block;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+
+
+.cambioImagen{
+
+    background-color: white;
+    margin: 0 auto;
+    width: 98%;
+    max-width:800px;
+    flex-direction: column;
+    /* font-size: 50px; */
+    
+}
+.cambioImagen form label{
+    margin: 12px;
+    display: block;
+    
+}
+
+
+.seleccionParlante, .boton2{  
+    
+    font-size: medium;
+    font-style: black;
+    font-size: 1.2vw;
+}
+
+#img1{
+    
+    width: 40vw;
+    
+    display: none;
+
+}
+
+#img2{
+    width: 40vw;
+    display: none;
+}
+
+#img3{
+    width: 40vw;
+    display: none;
+}
+
+#img4{
+    
+    width: 100%;
+    
+    
+
+}
+
+#img5{
+    width: 100%;
+   
+}
+
+#img6{
+    width: 100%;
+    
+}
+ 
+#footerProductos{                   
+    position: absolute;
+    width: 100%;
+    
+   
+   
+}
+
+.fotoArreglo1{
+    width: 100%;
+    display: inline;
+    margin: 30px;
+    margin-top: 20px;
+    padding: 8px;
+}
+.fotoArreglo2{
+    width: 100%;
+    display: inline;
+    margin: 30px;
+    padding: 8px;
+}
+
+.piepag{
+    color: white;
+    padding-bottom: 2px;
+    margin-bottom: 5px;
+    background-color: rgb(2, 71, 92) ;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+  
+}
+
+
+@media screen and (max-width: 400px) {  
+    .contenedor{
+        font-size: 90px;
+    }
+    .pag{
+        font-size: 23px;
+    }
+    .seleccionParlante{
+        font-size: 19px;
+    }
+    .formulario{
+        font-size: 30vw;
+    }
+    .menu{
+        font-size: 50px;
+    }
+    .home{
+        font-size: 22px;
+    }
+    .textoaNosotros{
+        font-size: 22px;
+    }
+}
+
+  @media screen and (min-width: 400px) {  
+   
+    .pag{
+        font-size: 20px;
+    }
+    .seleccionParlante{
+        font-size: 16px;
+    }
+    .formulario{
+        font-size: 23px;
+    }
+    .menu{
+        font-size: 30px;
+    }
+    .home{
+        font-size: 18px;
+    }
+    .textoaNosotros{
+        font-size: 18px;
+    }
+  } 
+
+
+@media screen and (min-width: 640px) {  
+    
+    .formulario{
+        font-size: 21px;
+    }
+    .pag{
+        font-size: 18px;
+    }
+    .seleccionParlante{
+        font-size: 14px;
+    }
+    .menu{
+        font-size: 28px;
+    }
+    .home{
+        font-size: 16px;
+    }
+    .textoaNosotros{
+        font-size: 16px;
+    }
+  }  
+  
+  
+
